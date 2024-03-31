@@ -4,10 +4,9 @@
     {
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
-      "config": {}
+      "config": {
+        "serverFiles": ["api/**"]
+      }
     }
-  ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api" }
   ]
 }
